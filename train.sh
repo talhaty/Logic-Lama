@@ -1,0 +1,16 @@
+!python sft.py \
+    --base_model "meta-llama/Llama-2-7b-hf" \
+    --data_path "data/MALLS-v0.json" \
+    --output_dir "logs/naive_translate_llama_sft" \
+    --prompt_template_path "data/prompt_templates" \
+    --translation_task \
+    --batch_size 128 \
+    --micro_batch_size 4 \
+    --num_epochs 10 \
+    --learning_rate 3e-4 \
+    --cutoff_len 256 \
+    --lora_r 16 \
+    --lora_alpha 16 \
+    --lora_dropout 0.05 \
+    --lora_target_modules '[q_proj,k_proj,v_proj,o_proj]' \
+    --load_in_8bit True

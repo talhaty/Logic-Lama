@@ -1,0 +1,9 @@
+git+https://github.com/huggingface/peft.git@b1059b73aab9043b118ff19b0cf96263ea86248a 
+https://pypi.org/simple/
+git+https://github.com/huggingface/transformers.git
+Levenshtein==0.20.9
+accelerate 
+bitsandbytes
+datasets 
+fire 
+wandb
